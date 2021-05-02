@@ -37,7 +37,7 @@ function App() {
     if (isLoggedin === true) {
       console.log("true");
       let ws = new WebSocket(
-        `ws://nameless-hamlet-68401.herokuapp.com/ws/${uid}/${name}`
+        `wss://nameless-hamlet-68401.herokuapp.com/ws/${uid}/${name}`
       );
       console.log(ws);
       setSocket(ws);
